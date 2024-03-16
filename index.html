@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>KHS Services</title>
+  <meta name="title" content="KHS Services">
+  <meta name="description" content="We offer a wide range of services including Hospital cleaning, building, car cleaning, and more,
+  KHS takes the commitment to delivering value to our clients seriously.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="khs">
+  <meta property="og:title" content="KHS Services">
+  <meta property="og:description" content="We offer a wide range of services including Hospital cleaning, building, car cleaning, and more,
+  KHS takes the commitment to delivering value to our clients seriously.">
+  <meta property="og:image" content="/banner.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="khs">
+  <meta property="twitter:title" content="KHS Services">
+  <meta property="twitter:description" content="We offer a wide range of services including Hospital cleaning, building, car cleaning, and more,
+  KHS takes the commitment to delivering value to our clients seriously.">
+  <meta property="twitter:image" content="/banner.jpg">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <!-- remix icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- aos library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>KHS SERVICES</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8363EY9PXH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8363EY9PXH');
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://zestlark.github.io/z-notify/index.js"></script>
+  <script>
+    const notifyConfig = {
+      x: 'center',
+      y: 'bottom',
+      borderRadius: '5px',
+      color: 'black',
+      background: 'white',
+      styles: {
+        danger: {
+          background: '#ff000044',
+          color: 'white'
+        },
+        success: {
+          background: '#00ff0044',
+          color: 'black'
+        }
+      },
+      options: {
+        timeout: 2000,
+        sound: 'https://zestlark.github.io/z-notify/audio/beep.mp3'
+      }
+    };
+    const notification = new Notification(notifyConfig);
+  </script>
+</body>
+
+</html>

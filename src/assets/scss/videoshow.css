@@ -1,0 +1,77 @@
+#videoshow .videoshow-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+#videoshow .videoshow-box video {
+  width: 400px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#videoshow .videoshow-box .player {
+  position: absolute;
+  background: #042cc3;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  bottom: -25px;
+  transition: 0.5s all;
+}
+#videoshow .videoshow-box .player::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #042cc3;
+  opacity: 25%;
+  z-index: 1;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+#videoshow .videoshow-box .player::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #042cc3;
+  opacity: 30%;
+  z-index: 1;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+#videoshow .videoshow-box .player i.pause {
+  display: none;
+}
+#videoshow .videoshow-box .player i.play {
+  display: block;
+}
+#videoshow .videoshow-box.play .player {
+  opacity: 50%;
+}
+#videoshow .videoshow-box.play .player::after {
+  opacity: 0;
+}
+#videoshow .videoshow-box.play .player::before {
+  opacity: 0;
+}
+#videoshow .videoshow-box.play .player i.pause {
+  display: block;
+}
+#videoshow .videoshow-box.play .player i.play {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  #videoshow .videoshow-box video {
+    width: 90%;
+    margin: 0;
+  }
+}/*# sourceMappingURL=videoshow.css.map */

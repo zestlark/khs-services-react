@@ -1,0 +1,18 @@
+$primary-color : #042cc3;
+$secondary-color: #76a4f7;
+$secondary-color2: #76a3f765;
+$title-font: 'Montserrat', sans-serif;
+$text-color: #434652;
+$grey-color : rgb(181, 181, 181);
+
+#clients {
+    a {
+        margin-right: 50px;
+
+        img {
+            width: 150px;
+            opacity: 1;
+            filter: saturate(1);
+        }
+    }
+}

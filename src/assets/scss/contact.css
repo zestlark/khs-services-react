@@ -1,0 +1,85 @@
+#contact {
+  background: linear-gradient(45deg, #92b5f2, #8ae3f5);
+  margin-top: 60px;
+}
+#contact .footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+#contact .footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(146, 181, 242, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  width: 60%;
+}
+#contact .footer form input,
+#contact .footer form textarea,
+#contact .footer form button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #042cc3;
+  color: black;
+}
+#contact .footer form textarea {
+  height: 150px;
+  resize: none;
+}
+#contact .footer form button {
+  background: #042cc3;
+  color: white;
+}
+#contact .footer img {
+  width: 150px;
+  margin: 20px;
+}
+#contact .footer ul {
+  list-style-type: none;
+}
+#contact .footer ul h3 {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#contact .footer ul li {
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+#contact .footer.two {
+  align-items: flex-start;
+}
+#contact .footer.two ul .social a {
+  font-size: 22px;
+  opacity: 50%;
+}
+#contact .footer.two ul .social a:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  #contact .footer.two {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #contact .footer.two form {
+    width: 100%;
+  }
+  #contact .footer.two ul {
+    text-align: center;
+    width: 100%;
+  }
+  #contact .footer.two ul li {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=contact.css.map */
